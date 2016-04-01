@@ -1,0 +1,104 @@
+.hero {
+	.carousel-cell {
+		width: 100%;
+		height: 90vh;
+		position: relative;
+		img {
+			width: 100%;
+		}
+		.contentOverlay {
+			position: absolute;
+			z-index: 200;
+			bottom: 40%;
+			right: 60%;
+			.headline {
+				background: $red;
+				padding: 10px;
+				color: white;
+				font-size: 4rem;
+				width: auto;
+			}
+			.subtitle {
+				color: lighten(black, 5%);
+				font-style: italic;
+				font-size: 2.4rem;
+			}
+			button {
+				border: 2px solid $red;
+				background: none;
+				color: white;
+				font-family: $header;
+				padding: 10px;
+				font-size: 2rem;
+			}
+		}
+	}
+	.flickity-prev-next-button {
+		display: none;
+	}
+	.flickity-page-dots {
+	  bottom: 28%;
+	}
+	.flickity-page-dots .dot {
+	  width: 8px;
+	  height: 8px;
+	  opacity: 1;
+	  background: transparent;
+	  border: 1px solid white;
+	  transition: all .2s;
+	}
+	.flickity-page-dots .dot.is-selected {
+	  width: 10px;
+	  height: 10px;
+	  background: white;
+	}
+}
+
+.sliderWrap {
+	position: relative;
+	.stats {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		.item {
+			float: left;
+			width: 25%;
+			position: relative;
+			z-index: 200;
+			text-align: center;
+			padding: 2%;
+			border-right: 1px solid $black;
+			h2 {
+				font-size: 2.4rem;
+				font-weight: 700;
+				color: $red;
+				margin-bottom: 0;
+				font-family: $bodyFont;
+				position: relative;
+				z-index: 200;
+			}
+			h4 {
+				color: white;
+				margin-top: 0;
+				font-family: $bodyFont;
+				font-size: 1.8rem;
+				position: relative;
+				z-index: 200;
+			}
+			.filter {
+				background: $black;
+				opacity: .5;
+				position: absolute;
+				top: 0;
+				right: 0;
+				left: 0;
+				bottom: 0;
+				z-index: 100;
+			}
+		}
+		.item:last-child {
+			border-right: 0;
+		}
+	}
+}

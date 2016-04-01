@@ -1,0 +1,43 @@
+.lead {
+	text-align: center;
+	padding: 4% 10%;
+	.objective {
+		font-size: 4rem;
+		font-weight: 400;
+		em {
+			color: $red;
+			font-style: normal;
+		}
+	}
+	.testimonial {
+		color: $grey;
+		font-weight: 300;
+		font-style: italic;
+		font-family: $bodyFont;
+		position: relative;
+	}
+	.testimonial::before {
+		content: "“";
+		left: -3%;
+	}
+	.testimonial::after {
+		content: "”";
+		right: -3%;
+
+	}
+	.testimonial::before,
+	.testimonial::after {
+		color: $red;
+		font-size: 3rem;
+		display: block;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		font-family: $header;
+		padding: 5px;
+	}
+	.source::before,
+	.source::after {
+		content: '--';
+	}
+}

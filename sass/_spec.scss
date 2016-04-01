@@ -1,0 +1,19 @@
+section.specialty {
+	padding-bottom: 5%;
+	.item {
+		float: left;
+		width: 33.3%;
+		padding: 2%;
+		text-align: center;
+		h2 {
+			font-size: 2rem;
+		}
+		h4 {
+			font-family: $bodyFont;
+			color: $grey;
+		}
+		p {
+			font-family: $header;
+		}
+	}
+}

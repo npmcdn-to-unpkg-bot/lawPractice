@@ -1,0 +1,82 @@
+header {
+	width: 100%;
+	height: 10vh;
+	position: relative;
+	.logo {
+		float: left;
+		width: 20%;
+		img {
+			float: left;
+			padding-right: 20px;
+			height: 10vh;
+		}
+		h3 {
+			margin: 0;
+			padding-top: 14px;
+			font-size: 2.4rem;
+			font-weight: 400;
+		}
+	}
+	nav {
+		float: left;
+		width: 60%;
+		text-align: center;
+		text-transform: uppercase;
+		padding-top: 20px;
+		font-size: 1.4rem;
+		ul {
+			margin: 0 auto;
+			padding: 0;
+		}
+		li {
+			float: left;
+			width: 33.33%;
+			a {
+				color: $black;
+			}
+		}
+	}
+	.social {
+		float: left;
+		margin: 0;
+		padding: 0;
+		width: 15%;
+		padding-top: 20px;
+		font-size: 1.8rem;
+		li {
+			float: left;
+			width: 20%;
+			a {
+				color: $grey;
+			}
+		}
+	}
+	.searchToggle {
+		float: left;
+		margin: 0;
+		padding: 0;
+		padding-top: 18px;
+		padding-left: 18px;
+		width: 5%;
+		background: #323232;
+		height: 60px;
+		color: #D7D7D7;
+		font-size: 1.8rem;
+		height: 100%;
+	}
+	#search-2 {
+		position: absolute;
+		right: 0;
+		top: 60px;
+		z-index: 300;
+		display: none;
+		input {
+			border: 0;
+			width: 100%;
+			padding: 5px;
+		}
+		input[type=submit] {
+			background: $grey;
+		}
+	}
+}
