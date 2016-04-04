@@ -1,8 +1,7 @@
 <?php get_header(); ?>
 
-<div class="main">
-  <div class="container">
-    <div class="content">
+  <section class="extra blog">
+    <div class="wrapper">
       <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
         <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -31,15 +30,10 @@
           <p class="nav-next"><?php next_post_link('%link', '%title &rarr;'); ?></p>
         </div><!-- #nav-below -->
 
-        <?php comments_template( '', true ); ?>
-
       <?php endwhile; // end of the loop. ?>
 
-    </div> <!-- /.content -->
+    </div> <!-- /.wrapper -->
 
-    <?php get_sidebar(); ?>
-
-  </div> <!-- /.container -->
-</div> <!-- /.main -->
+</section> <!-- /.extra -->
 
 <?php get_footer(); ?>

@@ -17,9 +17,78 @@ header {
 			font-weight: 400;
 		}
 	}
+	.hamburger {
+		display: none;
+		position: fixed;
+		top: 20px;
+		right: 5%;
+		z-index: 701;
+		height: 30px;
+		width: 30px;
+		margin: 0;
+		transform: rotate(0deg);
+		transition: .5s ease-in-out;
+	}
+
+	.hamburger span {
+		display: block;
+		position: absolute;
+		height: 4px;
+		width: 100%;
+		background: darken($black, 10%);
+		border-radius: 9px;
+		left: 0;
+		transform: rotate(0deg);
+		transition: .25s ease-in-out;
+	}
+
+	.hamburger .one {
+	  	top: 0px;
+	}
+
+	.hamburger .two {
+	  	top: 10px;
+	}
+
+	.hamburger .three {
+	  	top: 20px;
+	}
+
+	.hamburger.active span:nth-child(1) {
+	  	top: 10px;
+	  	transform: rotate(135deg);
+	  	background: $black;
+	}
+
+	.hamburger.active span:nth-child(2) {
+	  opacity: 0;
+	  left: -60px;
+	}
+
+	.hamburger.active span:nth-child(3) {
+	  top: 10px;
+	  transform: rotate(-135deg);
+	  background: $black;
+	}
+	.navFilter {
+		display: none;
+		position: fixed;
+		z-index: 5;
+		width: 100%;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		background: $grey;
+		opacity: .8;
+		transition: all .3s;
+	}
+	.navFilter.active {
+		display: block;
+	}
 	nav {
 		float: left;
 		width: 60%;
+		height: 100%;
 		text-align: center;
 		text-transform: uppercase;
 		padding-top: 20px;
@@ -38,45 +107,49 @@ header {
 	}
 	.social {
 		float: left;
-		margin: 0;
-		padding: 0;
-		width: 15%;
-		padding-top: 20px;
-		font-size: 1.8rem;
-		li {
-			float: left;
-			width: 20%;
-			a {
-				color: $grey;
+		width: 20%;
+		height: 100%;
+		ul {
+			margin: 0;
+			padding: 0;
+			font-size: 1.8rem;
+			li {
+				float: left;
+				width: 15%;
+				text-align: center;
+				padding: 20px 0;
+				a {
+					color: $grey;
+				}
 			}
 		}
-	}
-	.searchToggle {
-		float: left;
+		.searchToggle {
 		margin: 0;
 		padding: 0;
-		padding-top: 18px;
-		padding-left: 18px;
-		width: 5%;
+		padding-top: 20px;
 		background: #323232;
-		height: 60px;
+		height: 100%;
 		color: #D7D7D7;
 		font-size: 1.8rem;
-		height: 100%;
-	}
-	#search-2 {
-		position: absolute;
-		right: 0;
-		top: 60px;
-		z-index: 300;
-		display: none;
-		input {
-			border: 0;
-			width: 100%;
-			padding: 5px;
+		float: left;
+		width: 25%;
+		text-align: center;
 		}
-		input[type=submit] {
-			background: $grey;
+		#search-2 {
+			position: absolute;
+			right: 0;
+			top: 80px;
+			z-index: 300;
+			display: none;
+			input {
+				border: 0;
+				width: 100%;
+				padding: 10px;
+				-webkit-appearance: none;
+			}
+			input[type=submit] {
+				background: $grey;
+			}
 		}
 	}
 }

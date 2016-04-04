@@ -1,0 +1,22 @@
+section.extra {
+	padding: 5%;
+	article {
+		footer {
+			p {
+				padding-right: 5px;
+			}
+		}
+	}
+	.entry-content {
+			font-size: 1.4rem;
+		}
+}
+
+section.search {
+	article.specialty, 
+	article.page, 
+	article.contact_info,
+	article.stats {
+		display: none;
+	}
+}

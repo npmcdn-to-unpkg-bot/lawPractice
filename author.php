@@ -1,8 +1,7 @@
 <?php get_header(); ?>
 
-<div class="main">
-  <div class="container">
-    <div class="content">
+<section class="extra author">
+    <div class="wrapper">
       <?php
       	/* Queue the first post, that way we know who
       	 * the author is when we try to get their name,
@@ -32,11 +31,8 @@
       		rewind_posts();
       		get_template_part('loop', 'author');
       	?>
-    </div> <!-- /.content -->
+    </div> <!-- /.wrapper -->
 
-    <?php get_sidebar(); ?>
-
-  </div> <!-- /.container -->
-</div> <!-- /.main -->
+</section> <!-- /.extra -->
 
 <?php get_footer(); ?>

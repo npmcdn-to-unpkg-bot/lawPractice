@@ -37,7 +37,7 @@
 		display: none;
 	}
 	.flickity-page-dots {
-	  bottom: 28%;
+	  bottom: 30%;
 	}
 	.flickity-page-dots .dot {
 	  width: 8px;
@@ -73,14 +73,14 @@
 				font-size: 2.4rem;
 				font-weight: 700;
 				color: $red;
-				margin-bottom: 0;
+				margin: 0;
 				font-family: $bodyFont;
 				position: relative;
 				z-index: 200;
 			}
 			h4 {
 				color: white;
-				margin-top: 0;
+				margin: 0;
 				font-family: $bodyFont;
 				font-size: 1.8rem;
 				position: relative;

@@ -1,5 +1,6 @@
 <?php get_header(); ?>
-<div class="wrapper">
+<section class="extra search">
+	<div class="wrapper">
 			<?php if ( have_posts() ) : ?>
 
 				<h1>Search Results for: <?php echo get_search_query(); ?></h1>
@@ -14,5 +15,7 @@
 			<?php endif; ?>
 
 </div> <!-- /.wrapper -->
+</section>
+
 
 <?php get_footer(); ?>

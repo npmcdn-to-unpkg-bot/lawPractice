@@ -15,20 +15,27 @@
         <img src="<?php bloginfo('template_url'); ?>/images/logo.png" alt="">
         <h3><?php bloginfo( 'name' ); ?></h3>
       </a>
-    </div><!-- .logo -->  
+    </div><!-- .logo -->
+    <div class="hamburger">
+      <span class="one"></span>
+      <span class="two"></span>
+      <span class="three"></span>
+    </div><!-- .hamburger -->
+    <div class="navFilter"></div>
     <?php wp_nav_menu( array(
         'container' => 'nav',
         'theme_location' => 'primary'
       )); ?>
-      <ul class="social">
-        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-        <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-      </ul><!-- .social -->
-    <div class="searchToggle"><i class="fa fa-search"></i></div><!-- .searchToggle -->
-      <?php  dynamic_sidebar( 'primary-widget-area' ); ?>
-    
+      <div class="social">
+        <ul>
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+        </ul>
+        <div class="searchToggle"><i class="fa fa-search"></i></div><!-- .searchToggle -->
+        <?php  dynamic_sidebar( 'primary-widget-area' ); ?>
+      </div><!-- .social -->
   </header><!-- /.header -->
 
